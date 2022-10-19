@@ -1,0 +1,7 @@
+﻿origin_name;origin_state;destination_name;destination_state
+Curitiba;PR;Florianópolis;SC
+Curitiba;PR;Ponta Grossa;PR
+Florianópolis;SC;Curitiba;PR
+Ponta Grossa;PR;Curitiba;PR
+Florianópolis;SC;Porto Alegre;RS
+Porto Alegre;RS;Florianópolis;SC

@@ -1,0 +1,25 @@
+
+
+service: oxylabs-blablacar
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  memorySize: 2048 # optional, in MB, default is 1024
+  timeout: 900 # optional, in seconds, default is 6
+  environment: ${file(env.yml)}
+  deploymentBucket:
+    name: deploy-dados
+
+functions:
+  se-v:
+    name: crawler-oxylabs-blablacar
+    image: 321102677516.dkr.ecr.us-east-1.amazonaws.com/embarca-ecr:oxylabs-blablacar
+    # events:      
+    #   - http:          
+    #       method: post          
+    #       path: /
+    #       cors: true          
+          
